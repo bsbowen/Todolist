@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+    font-weight: 200;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-container {
+    background-color: #333333; /* Dark grey background for container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    width: 80%; /* Adjust this value to make the container wider */
+}
+
+table {
+    width: 95%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px; /* Increase padding for bigger cells */
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 18px; /* Increase font size for bigger text */
+    color: #ffffff; /* White text */
+}
+
+th {
+    background-color: #555555; /* Darker grey for table headers */
+}
+
+tbody tr:nth-child(odd) {
+    background-color: hsla(293, 95%, 49%, 0.381); /* Light pink for odd rows */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #cccccc; /* Light grey for even rows */
+}
+
+input, button {
+    padding: 15px; /* Increase padding for bigger input and button */
+    margin: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px; 
+    font-weight: 100;/* Increase font size for bigger text */
+}
+
+input {
+    background-color: #555555; /* Darker grey for input background */
+    color: #ffffff; /* White text */
+    font-weight: 100;
+}
+
+button {
+    background-color: #888888; /* Grey background for button */
+    color: #ffffff; /* White text */
+}
+
+button:hover {
+    background-color: #da06f668; /* Lighter grey when hovering */
+}
+
+.delete-button {
+    background-color: #ff4c4c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px; /* Increase font size for bigger button text */
+    padding: 10px 15px; /* Increase padding for bigger button */
+}
+
+.delete-button:hover {
+    background-color: #ff0000;
+}
+
+.crossed-out {
+    text-decoration: line-through;
+}
